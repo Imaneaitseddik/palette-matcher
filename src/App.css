@@ -1,0 +1,175 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+  color: #e0e0ff;
+  font-family: 'Orbitron', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  overflow-x: hidden;
+}
+
+.container {
+  background: rgba(48, 43, 99, 0.6);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 
+    0 15px 35px rgba(0,0,0,0.4),
+    0 5px 15px rgba(0,0,0,0.3),
+    inset 0 0 15px rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  transform: rotateX(10deg) rotateY(-10deg);
+  transition: all 0.5s ease;
+}
+
+.container:hover {
+  transform: rotateX(0) rotateY(0) scale(1.02);
+  box-shadow: 
+    0 25px 45px rgba(0,0,0,0.5),
+    0 10px 25px rgba(0,0,0,0.4),
+    inset 0 0 25px rgba(255,255,255,0.2);
+}
+
+h1 {
+  text-align: center;
+  background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 15px rgba(78,205,196,0.5);
+}
+
+.border-dashed {
+  border-color: rgba(255,255,255,0.2) !important;
+  transition: border-color 0.3s ease;
+}
+
+.border-dashed:hover {
+  border-color: rgba(255,255,255,0.5) !important;
+}
+
+input, button {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #e0e0ff;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: rgba(255,255,255,0.2);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+[style*="backgroundColor"] {
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+[style*="backgroundColor"]:hover {
+  transform: scale(1.1) rotate(5deg);
+  z-index: 10;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.grid > div {
+  perspective: 500px;
+  transition: transform 0.5s;
+}
+
+.grid > div:hover {
+  transform: rotateY(15deg);
+}
+
+@keyframes colorPulse {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+.animate-pulse {
+  animation: colorPulse 2s infinite;
+}
+
+@media (max-width: 640px) {
+  .container {
+    transform: none;
+    width: 95%;
+    padding: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
